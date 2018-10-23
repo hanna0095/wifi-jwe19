@@ -1,0 +1,75 @@
+:root {
+  --screen-max: 1200px; /*variable*/
+  --base-font: 'Montserrat', sans-serif;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Light.ttf);
+  font-weight: lighter;
+}
+
+html, body {
+  margin: 0;
+}
+
+body {
+  font-family: var(--base-font);
+  font-size: 100%; /*die mir der Browser oder Mobile vorschlägt*/
+}
+
+html * {
+  box-sizing: border-box; /* "*" heißt für alle Elemente innerhalb html*/
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 45vw;
+  background: lightgreen;
+  overflow: hidden;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; /*zentriert das Bild und schneidet es ab*/
+  display: block; /*wenn man verhindern will, dass .inner-wrapper ein paar px verschoben ist*/
+}
+
+header .inner-wrapper {
+  position: relative;
+  max-width: var(--screen-max); /*Verwendung variable*/
+  margin: 0 auto;
+  background: red;
+}
+
+header h1 {
+  position: absolute; /*absolut hat keine Höhe und Breite, deswegen würde text-align: center; nicht funktionieren*/
+  left: 0;
+  bottom: 0;
+  background: green;
+  width: 100%;
+}
+
+main {
+  background: lightgrey;
+}
+
+footer {
+  background: #333;
+  padding
+}
