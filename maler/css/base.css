@@ -1,6 +1,14 @@
 :root {
   --screen-max: 1200px; /*variable*/
   --base-font: 'Montserrat', sans-serif;
+  --base-font2: 'Pridi', 'Times New Roman', serif;
+
+  --grey-light: #fefefe;
+  --grey-dark: #525252;
+  --grey: #696969;
+
+
+  --font-color-light: #fefefe;
 }
 
 @font-face {
@@ -21,6 +29,24 @@
   font-weight: lighter;
 }
 
+@font-face {
+  font-family: 'Pridi';
+  src: url(../fonts/Pridi-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Pridi';
+  src: url(../fonts/Pridi-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Pridi';
+  src: url(../fonts/Pridi-Light.ttf);
+  font-weight: lighter;
+}
+
 html, body {
   margin: 0;
 }
@@ -28,6 +54,10 @@ html, body {
 body {
   font-family: var(--base-font);
   font-size: 100%; /*die mir der Browser oder Mobile vorschlägt*/
+  background: orange;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
 }
 
 html * {
@@ -50,26 +80,68 @@ header img {
   display: block; /*wenn man verhindern will, dass .inner-wrapper ein paar px verschoben ist*/
 }
 
-header .inner-wrapper {
+header .inner-wrapper,
+footer .inner-wrapper {
   position: relative;
   max-width: var(--screen-max); /*Verwendung variable*/
   margin: 0 auto;
-  background: red;
+  /*background: red;*/
 }
 
 header h1 {
   position: absolute; /*absolut hat keine Höhe und Breite, deswegen würde text-align: center; nicht funktionieren*/
   left: 0;
   bottom: 0;
-  background: green;
+  /*background: green;*/
   width: 100%;
 }
 
 main {
   background: lightgrey;
+  flex: 1;
 }
 
 footer {
-  background: #333;
-  padding
+  background: var(--grey-dark);
+}
+
+footer a {
+  font-family: var(--base-font2);
+  color: var(--grey-light);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer ul {
+  list-style-type: none; /*oder nur list-style*/
+  margin: 0px;
+  padding: 0px;
+}
+
+footer li {
+  padding: 5px 0px;
+}
+
+footer .footer-top {
+  display: flex;
+}
+
+footer .footer-left {
+  /*background: purple;*/
+  flex: 1;
+
+}
+footer .footer-right {
+  /*background: coral;*/
+  text-align: right;
+  flex: 1;
+}
+
+footer .footer-bottom {
+  /*background: grey;*/
+  display: flex;
+  font-size: 75%;
+  color: var(--grey);
+  margin-top: 20px;
+  padding-bottom: 20px;
 }
