@@ -1,0 +1,92 @@
+section.content-element {
+  display: block;
+  /*background: purple;*/
+  position: relative;
+  margin-top: 50px;
+}
+
+.content-element header h2{
+  font-family: var(--base-font2);
+  font-weight: lighter;
+  color: var(--grey-dark);
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.content-element .teaser {
+  position: relative;
+  background:
+    linear-gradient(rgba(255,140,0,0.5), rgba(255,140,0,0.5)),
+    url(../img/example-content-image.jpg) center top no-repeat;
+  background-size: cover;
+  min-height: 25vw;
+  padding-top: 30px;
+}
+
+/*.content-element .teaser::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255,125,0,0.5);
+}*/
+
+.content-element .teaser p {
+  position: relative;
+  z-index: 10;
+  color: var(--grey-light);
+}
+
+.content-element .content-text p {
+  color: var(--grey-dark);
+}
+
+.content-element .content-text img {
+  width: 40%;
+}
+
+
+
+.content-element a.button {
+  display: inline-block;
+  padding: 1em 2em;
+  text-decoration: none;
+  color: var(--grey-light);
+  font-weight: bold;
+  background-color: rgb(255,140,0);
+}
+
+.content-element a:hover {
+  opacity: .6;
+}
+
+.content-element .teaser2 {
+  position: relative;
+  background: url(../img/example-content-image-2.jpg) center top no-repeat;
+  background-size: cover;
+  height: 25vw;
+  padding-top: 30px;
+}
+
+
+@media screen and (min-width: 576px) {
+
+
+  .content-element .teaser p {
+    max-width: 50%;
+  }
+
+  .content-element .content-text p {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content-element .teaser {
+    min-height: none;
+    max-height: 40rem;
+  }
+}

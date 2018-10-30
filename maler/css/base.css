@@ -7,6 +7,8 @@
   --grey-dark: #525252;
   --grey: #696969;
 
+  --green-dark: #007d80;
+
 
   --font-color-light: #fefefe;
 
@@ -55,7 +57,7 @@ html, body {
 body {
   font-family: var(--base-font);
   font-size: 100%; /*die mir der Browser oder Mobile vorschlägt*/
-  background: orange;
+  /*background: orange;*/
   display: flex;
   flex-flow: column;
   min-height: 100vh;
@@ -63,6 +65,10 @@ body {
 
 html * {
   box-sizing: border-box; /* "*" heißt für alle Elemente innerhalb html*/
+}
+
+.main-navigation {
+  display: none;
 }
 
 #logo {
@@ -78,28 +84,36 @@ html * {
   display: block;
   width: 100%;
   height: 100%;
-  background: var(--grey-dark) url('../img/logo_muthwill.svg') no-repeat;
-  background-size: contain;
+  background: var(--grey-dark) url('../img/logo_muthwill.svg') no-repeat center center;
+  /*background-size: contain; Macht das Hintergrundbild so groß wie möglich*/
+  background-size: 85%;
   text-indent: -9999em;
   overflow: hidden;
 }
 
 #logo-part-2 {
   position: absolute;
+  z-index: 100;
   top: 0;
   left: 10em;
-  width: 9em;
+  width: 10em;
   height: 5em;
 }
 
 #logo-part-2 a{
   width: 100%;
   height: 100%;
-  display: block;
+  display: flex;
   background-color: white;
+  text-decoration: none;
+  color: var(--grey-dark);
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
 
-header {
+header#main-header {
   position: relative;
   width: 100%;
   height: 45vw;
@@ -107,15 +121,17 @@ header {
   overflow: hidden;
 }
 
-header img {
+header#main-header img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center; /*zentriert das Bild und schneidet es ab*/
   display: block; /*wenn man verhindern will, dass .inner-wrapper ein paar px verschoben ist*/
+  border-bottom: 20px solid var(--green-dark);
 }
 
-header .inner-wrapper,
+header#main-header .inner-wrapper,
+.content-element .inner-wrapper,
 footer .inner-wrapper {
   position: relative;
   max-width: var(--screen-max); /*Verwendung variable*/
@@ -123,18 +139,24 @@ footer .inner-wrapper {
   /*background: red;*/
 }
 
-header h1 {
+header#main-header h1 {
   position: absolute; /*absolut hat keine Höhe und Breite, deswegen würde text-align: center; nicht funktionieren*/
   left: 0;
   bottom: 0;
   /*background: green;*/
   width: 100%;
+  font-family: var(--base-font2);
+  color: var(--grey-light);
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 4em;
 }
 
 main {
-  background: lightgrey;
+  /*background: lightgrey;*/
   flex: 1;
 }
+
 
 footer {
   background: var(--grey-dark);
