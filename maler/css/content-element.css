@@ -15,13 +15,17 @@ section.content-element {
 
 .content-element .teaser {
   position: relative;
+  min-height: 25vw;
+  padding-top: 30px;
+}
+
+.content-element .pic-one {
   background:
     linear-gradient(rgba(255,140,0,0.5), rgba(255,140,0,0.5)),
     url(../img/example-content-image.jpg) center top no-repeat;
   background-size: cover;
-  min-height: 25vw;
-  padding-top: 30px;
 }
+
 
 /*.content-element .teaser::after {
   content: '';
@@ -50,6 +54,7 @@ section.content-element {
 
 
 
+
 .content-element a.button {
   display: inline-block;
   padding: 1em 2em;
@@ -63,13 +68,53 @@ section.content-element {
   opacity: .6;
 }
 
-.content-element .teaser2 {
-  position: relative;
+.content-element .pic-two {
   background: url(../img/example-content-image-2.jpg) center top no-repeat;
   background-size: cover;
-  height: 25vw;
-  padding-top: 30px;
 }
+
+.content-element .content-text p.p-center {
+  margin: 30px auto;
+}
+
+.content-element .content-text a.brillux {
+  margin: auto;
+  background-color: #14b4e4;
+  display: table;
+}
+
+.content-element .pic-three {
+  background-color: #066150;
+  min-height: 15vw;
+}
+
+.content-element .pic-four {
+  background:
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    url(../img/example-content-image-3.jpg) center top no-repeat;
+  background-size: cover;
+
+}
+
+.content-element .pic-five {
+  background:
+    linear-gradient(rgba(115,109,109,0.5), rgba(115,109,109,0.5)),
+    url(../img/example-content-image-2.jpg) center top no-repeat;
+  background-size: cover;
+
+}
+
+.content-element .pic-six {
+  background-color: orange;
+  min-height: 15vw;
+}
+
+.content-element .content-text a.mail {
+  text-decoration: none;
+  color: var(--grey-dark);
+}
+
+
 
 
 @media screen and (min-width: 576px) {
