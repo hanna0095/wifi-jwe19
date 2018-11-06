@@ -9,8 +9,10 @@ section.content-element {
   font-family: var(--base-font2);
   font-weight: lighter;
   color: var(--grey-dark);
-  font-size: 3em;
+  font-size: 2rem; /*auch mit vw möglich*/
   text-transform: uppercase;
+  /*hyphens: auto; hyphens = Silbentrennung, funktioniert derzeit nur im FF (nicht im Chrome)*/
+  word-break: break-word; /*bricht bei Wort um*/
 }
 
 .content-element .teaser {
@@ -115,9 +117,32 @@ section.content-element {
 }
 
 
+section.spalten {
+  display: flex;
+}
+
+section.spalten .drei-spaltenlayout {
+  flex: 1;
+  width: 33%;
+  text-align: center;
+}
+
+section.spalten .drei-spaltenlayout img.spalten-overlay {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+
+
 
 
 @media screen and (min-width: 576px) {
+
+  .content-element header h2 {
+    font-size: 3rem;
+  }
 
 
   .content-element .teaser p {
@@ -126,6 +151,16 @@ section.content-element {
 
   .content-element .content-text p {
     max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  header#main-header h1,
+  .content-element > header,
+  .content-element .teaser .inner-wrapper,
+  .content-element .content-text {
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
   }
 }
 

@@ -12,6 +12,8 @@
 
   --font-color-light: #fefefe;
 
+  --main-padding: 1.3rem;
+
 }
 
 @font-face {
@@ -72,10 +74,6 @@ html * {
 }
 
 #logo {
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 5em;
   width: 5em;
   height: 5em;
 }
@@ -95,7 +93,7 @@ html * {
   position: absolute;
   z-index: 100;
   top: 0;
-  left: 10em;
+  left: 7em;
   width: 10em;
   height: 5em;
 }
@@ -132,7 +130,8 @@ header#main-header img {
 
 header#main-header .inner-wrapper,
 .content-element .inner-wrapper,
-footer .inner-wrapper {
+footer .inner-wrapper,
+section.inner-wrapper {
   position: relative;
   max-width: var(--screen-max); /*Verwendung variable*/
   margin: 0 auto;
@@ -149,7 +148,7 @@ header#main-header h1 {
   color: var(--grey-light);
   text-transform: uppercase;
   font-weight: lighter;
-  font-size: 4em;
+  font-size: 5vw;
 }
 
 main {
@@ -180,6 +179,7 @@ footer li {
 }
 
 footer .footer-top {
+  margin-top: 20px;
 }
 
 footer .footer-left {
@@ -196,6 +196,7 @@ footer .footer-bottom {
   color: var(--grey);
   margin-top: 20px;
   padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 
@@ -227,11 +228,32 @@ footer .footer-bottom {
 
 }
 
+
+@media screen and (max-width: 1250px) {
+
+  footer {
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+  }
+
+}
+
 @media screen and (min-width: 768px) {
 
 }
 
 @media screen and (min-width: 992px) {
+
+  #logo {
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      left: 5em;
+  }
+
+  #logo-part-2 {
+    left: 10em;
+  }
 
 }
 
