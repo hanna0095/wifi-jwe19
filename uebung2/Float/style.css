@@ -1,0 +1,32 @@
+/*html, body {
+  margin: 0;
+  padding: 0;
+}*/
+
+p.nr-left {
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  text-align: center;
+  display: block;
+  float: left;
+}
+
+
+p.text1 {
+  clear: both;
+  display: block;
+}
+
+p.nr-right {
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  text-align: center;
+  display: block;
+  float: right;
+}
+
+p.text2 {
+  display: inline-block;
+}
