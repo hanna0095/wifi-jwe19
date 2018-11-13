@@ -135,13 +135,16 @@ section.spalten .drei-spaltenlayout img.spalten-overlay {
 
 div.formular {
   padding-top: 10px;
+  padding-bottom: 10px;
   min-height: 400px;
-
   background: var(--grey-dark);
+  margin-bottom: 20px;
 }
 
 label {
   color: var(--grey-light);
+  display: block;
+  padding-bottom: 5px;
 }
 
 div.formular #name,
@@ -150,9 +153,8 @@ div.formular #email,
 div.formular #betreff,
 div.formular #notes,
 div.formular #submit {
-  position: absolute;
-  left: 150px;
-  width: 50%;
+
+  width: 100%;
 }
 
 div.formular #submit {
@@ -190,6 +192,11 @@ font-family: var(--base-font);
   .content-element .content-text p {
     max-width: 60%;
   }
+
+  label {
+    display: inline;
+  }
+
 
   div.formular #name,
   div.formular #firma,
