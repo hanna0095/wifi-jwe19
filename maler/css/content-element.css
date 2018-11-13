@@ -153,8 +153,8 @@ div.formular #email,
 div.formular #betreff,
 div.formular #notes,
 div.formular #submit {
-
   width: 100%;
+  padding: 5px 0px;
 }
 
 div.formular #submit {
@@ -207,7 +207,12 @@ font-family: var(--base-font);
     position: absolute;
     left: 30%;
     width: 380px;
+      padding: 0px;
   }
+}
+
+div.formular #notes {
+  resize: none;
 }
 
 @media screen and (max-width: 1250px) {
