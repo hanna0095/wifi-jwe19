@@ -133,6 +133,44 @@ section.spalten .drei-spaltenlayout img.spalten-overlay {
 }
 
 
+div.formular {
+  padding-top: 10px;
+  min-height: 400px;
+
+  background: var(--grey-dark);
+}
+
+label {
+  color: var(--grey-light);
+}
+
+div.formular #name,
+div.formular #firma,
+div.formular #email,
+div.formular #betreff,
+div.formular #notes,
+div.formular #submit {
+  position: absolute;
+  left: 150px;
+  width: 50%;
+}
+
+div.formular #submit {
+  top: 300px;
+  background-color: orange;
+  border: none;
+  height: 35px;
+  color: white;
+  font-weight: bold;
+}
+
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+color: lightgrey;
+font-family: var(--base-font);
+}
+
 
 
 
@@ -152,13 +190,25 @@ section.spalten .drei-spaltenlayout img.spalten-overlay {
   .content-element .content-text p {
     max-width: 60%;
   }
+
+  div.formular #name,
+  div.formular #firma,
+  div.formular #email,
+  div.formular #betreff,
+  div.formular #notes,
+  div.formular #submit {
+    position: absolute;
+    left: 30%;
+    width: 380px;
+  }
 }
 
 @media screen and (max-width: 1250px) {
   header#main-header h1,
   .content-element > header,
   .content-element .teaser .inner-wrapper,
-  .content-element .content-text {
+  .content-element .content-text,
+  div.formular {
     padding-left: var(--main-padding);
     padding-right: var(--main-padding);
   }

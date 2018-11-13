@@ -131,7 +131,8 @@ header#main-header img {
 header#main-header .inner-wrapper,
 .content-element .inner-wrapper,
 footer .inner-wrapper,
-section.inner-wrapper {
+section.inner-wrapper,
+form.inner-wrapper {
   position: relative;
   max-width: var(--screen-max); /*Verwendung variable*/
   margin: 0 auto;
