@@ -154,11 +154,12 @@ div.formular #betreff,
 div.formular #notes,
 div.formular #submit {
   width: 100%;
-  padding: 5px 0px;
+  padding: 5px 5px;
+  font-family: var(--base-font);
 }
 
 div.formular #submit {
-  top: 300px;
+  top: 310px;
   background-color: orange;
   border: none;
   height: 35px;
@@ -173,7 +174,9 @@ color: lightgrey;
 font-family: var(--base-font);
 }
 
-
+div.formular #notes {
+  resize: none;
+}
 
 
 
@@ -207,13 +210,13 @@ font-family: var(--base-font);
     position: absolute;
     left: 30%;
     width: 380px;
-      padding: 0px;
+  }
+
+  div.formular p {
+    padding-bottom: 5px;
   }
 }
 
-div.formular #notes {
-  resize: none;
-}
 
 @media screen and (max-width: 1250px) {
   header#main-header h1,
