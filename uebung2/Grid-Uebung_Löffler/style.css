@@ -1,0 +1,45 @@
+body {
+  font-family: Arial;
+  font-size: 15px;
+}
+
+.item1 {
+  grid-area: left;
+}
+.item2 {
+  grid-area: middle;
+  padding-left: 50px;
+}
+.item3 {
+  grid-area: right;
+}
+
+.grid-container {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+ grid-column: auto;
+ border: 1px solid black;
+}
+
+.grid-container .item1 p {
+  color: grey;
+  text-align: center;
+}
+
+
+
+.grid-container ul li {
+  color: black;
+  font-weight: bold;
+  margin-left: 20%;
+}
+
+strong {
+  color: black;
+}
