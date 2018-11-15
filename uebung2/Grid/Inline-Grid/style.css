@@ -1,0 +1,23 @@
+
+
+.inline-grid-container {
+  background-color: coral;
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(0,0,0,0.3);
+  padding: 20px;
+  font-size: 30px;
+  border: 1px solid black;
+  text-align: center;
+  color: white;
+}
+
+.grid-item5 {
+  grid-column-start: 2; /*Man zählt alle Kanten*/
+  grid-column-end: 4;
+
+}
