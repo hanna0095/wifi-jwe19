@@ -24,7 +24,7 @@ html, body {
 }
 
 .innerwrapper {
-  width: 60%;
+  width: 60vw;
   margin: auto;
 }
 
@@ -64,20 +64,47 @@ header nav#menu li:hover a {
 }
 
 /*Slider*/
+div.slider,
+div.grid-content {
+  margin-bottom: 4vw;
+}
 
-div#slider img {
+div.slider img.sliderpic {
   display: block;
   position: relative;
   width: 100%;
 }
 
-div#slider div.description {
+div.slider div.description {
   position: absolute;
-  top: 30%;
-  left: 20%;
-  width: 40%;
+  top: 15vw;
+  left: 20vw;
+  width: 40vw;
   color: white;
 }
+
+/*California Flag*/
+
+div.slider div.california-flag {
+  position: absolute;
+  top: 30vw;
+  left: 40vw;
+}
+
+div.slider div.california-flag h2 {
+  float: left;
+  background: url('screendesign_v1-assets/overlay-bg.png');
+  margin-top: 5%;
+  padding: 10px 30px;
+  background-size: 100% 100%;
+}
+
+div.slider div.california-flag img {
+  position: relative;
+  left: -1vw;
+}
+
+
 
 /*Grid-Content*/
 
@@ -164,7 +191,7 @@ div.grid-pictures div {
 footer {
   color: white;
   background: #4c4c4c;
-  height: 20vw;
+  height: 18vw;
 }
 
 footer div.footer-top p {
