@@ -18,7 +18,10 @@ header#main-header {
   position: relative;
   float: right;
   transform: translateY(-50%);
-  height: 78px;
+  width: 100%;
+  max-width: 569px;
+  min-height: 78px;
+  height: auto;
   background-image: url(../screendesign_v1-assets/overlay-bg.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -38,20 +41,25 @@ header#main-header {
 
 .overlay-box p {
   margin: 0px 0px 0px 35px;
-  padding: 0 35px 0 0;
+  padding: 25px 35px 35px 0;
   width: calc(65% - 70px);
 }
+
+
 
 @media screen and (min-width: 960px) {
 
   .overlay-box {
     margin-right: 40px;
     background-size: contain;
-    width: 600px;
   }
 
   .overlay-box img {
     width: unset;
     transform: translateX(40px) translateY(-50%);
+  }
+
+  .overlay-box p {
+      padding: 0 35px 0 0;
   }
 }
