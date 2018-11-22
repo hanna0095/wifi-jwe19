@@ -54,7 +54,7 @@ div.overlay-box span {
   max-width: 569px;
   min-height: 78px;
   height: auto;
-  background-image: url(../screendesign_v1-assets/overlay-bg.png);
+  background-image: url(overlay-bg.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: flex;
