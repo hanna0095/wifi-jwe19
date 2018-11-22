@@ -79,7 +79,7 @@ div.slider div.description {
   position: absolute;
   top: 15vw;
   left: 20vw;
-  width: 40vw;
+  max-width: 430px;
   color: white;
 }
 
@@ -87,16 +87,18 @@ div.slider div.description {
 
 div.slider div.california-flag {
   position: absolute;
-  top: 30vw;
   left: 40vw;
+  display: flex;
+  transform: translateY(-60px);
 }
 
-div.slider div.california-flag h2 {
+div.slider div.california-flag h3 {
   float: left;
-  background: url('screendesign_v1-assets/overlay-bg.png');
-  margin-top: 5%;
+  background: url('screendesign_v1-assets/overlay-bg.png') no-repeat;
   padding: 10px 30px;
-  background-size: 100% 100%;
+  background-size: auto;
+  font-size: 100%;
+  width: 330px;
 }
 
 div.slider div.california-flag img {
@@ -135,6 +137,10 @@ div.grid-content > div {
   text-align: center;
 }
 
+div.grid-content img {
+  width: 100%;
+}
+
 div.grid-content a.description-link {
   color: #ca0808;
 }
@@ -143,7 +149,7 @@ div.grid-content a.description-link {
 
 div.grid-pictures div#picture1 {
   grid-area: pic-one;
-  background: violet;
+  position: relative;
 }
 div.grid-pictures div#picture2 {
   grid-area: pic-two;
@@ -184,6 +190,24 @@ div.grid-pictures {
 div.grid-pictures div {
   width:100%;
   height: 250px;
+}
+
+div.grid-pictures div img {
+  width: 100%;
+}
+
+/* hover Grid-Bilder*/
+
+div.grid-pictures div.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+div.grid-pictures:hover div.overlay {
+  background-color: red;
 }
 
 /*footer*/

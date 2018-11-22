@@ -1,0 +1,57 @@
+header#main-header {
+  height: 600px;
+  background: silver;
+}
+
+.overlay {
+  position: relative;
+  background: green;
+}
+
+.overlay-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: orange;
+}
+
+.overlay-box {
+  position: relative;
+  float: right;
+  transform: translateY(-50%);
+  height: 78px;
+  background-image: url(../screendesign_v1-assets/overlay-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.overlay-box img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateX(0) translateY(-50%);
+  width: 35%;
+  min-width: 100px;
+}
+
+.overlay-box p {
+  margin: 0px 0px 0px 35px;
+  padding: 0 35px 0 0;
+  width: calc(65% - 70px);
+}
+
+@media screen and (min-width: 960px) {
+
+  .overlay-box {
+    margin-right: 40px;
+    background-size: contain;
+    width: 600px;
+  }
+
+  .overlay-box img {
+    width: unset;
+    transform: translateX(40px) translateY(-50%);
+  }
+}
