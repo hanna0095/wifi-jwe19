@@ -16,12 +16,28 @@ html, body {
     left: 0%;
   }
 
-  33.3% {
+  15% {
+    left: 0%;
+  }
+
+  29% {
     left: -100%;
   }
 
-  66.6% {
+  44% {
+    left: -100%;
+  }
+
+  58% {
     left: -200%;
+  }
+
+  73% {
+    left: -200%;
+  }
+
+  87% {
+    left: -300%;
   }
 
   100% {
@@ -35,7 +51,7 @@ html, body {
   width: 400%;
   position: relative;
   animation: slidepic 16s ease-in-out;
-  animation-direction: normal;
+  animation-direction: alternate;
   animation-iteration-count: infinite;
 }
 
