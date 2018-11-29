@@ -1,0 +1,168 @@
+:root {
+    --brown: #D0B085;
+    --grey: #707070;
+    --white: #FFFFFF;
+
+    /*BUTTON VARIABLEN*/
+    --btn-border: solid var(--brown) 2px;
+    --btn-padding: 0.75em 1.2em 0.45em;
+    --btn-margin: 1em auto;
+
+
+    /* Costum Breakpoints*/
+
+    --min-xs: 480px;
+    --min-sm: 768px;
+    --min-md: 992px;
+    --min-lg: 1280px;
+    --min-xlg: 1600px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.innerwrapper {
+  width: 70%;
+  margin: auto;
+}
+
+/*header with fixed logo and nav*/
+
+div.headerfix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+
+}
+
+header {
+  background: white;
+}
+
+header.header {
+  display: flex;
+}
+
+header #logo {
+  width: 10vw;
+  flex: 1;
+  display: block;
+}
+
+header #logo img {
+  width: 15vw;
+}
+
+header nav ul {
+  flex: 1;
+  display: block;
+}
+
+header nav ul li {
+  float: left;
+  display: block;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 5px 20px 5px 20px;
+  margin: 0;
+  color: var(--grey);
+}
+
+/*slider*/
+
+div#slider img {
+  width: 100%;
+  height: 30vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*main sortiment*/
+
+main.sortiment div.sortiment-flex {
+  display: flex;
+}
+
+main.sortiment h1 {
+  text-align: center;
+}
+
+main.sortiment div.sortiment-flex div.item {
+  flex: 1;
+}
+
+main.sortiment div.sortiment-flex div.item img {
+  width: 100%;
+}
+
+/*section order*/
+
+section div.order {
+  text-align: center;
+  width: 100%;
+}
+
+section div.order div.button {
+  border: 1px solid var(--brown);
+  padding: 15px 30px 15px 30px;
+  width: 20vw;
+  margin: auto;
+  text-transform: uppercase;
+  color: var(--brown);
+}
+
+/*footer*/
+
+footer {
+
+}
+
+footer div.footer-top {
+  color: white;
+  background: var(--brown);
+}
+
+footer div.footer-content {
+  display: flex;
+}
+
+footer div.footer-content .footer-left {
+  flex: 1;
+}
+
+footer div.footer-content .footer-left a {
+  text-decoration: none;
+  color: white;
+}
+
+footer div.footer-content .footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+footer div.footer-content .footer-right ul li {
+  list-style-type: none;
+}
+
+footer div.footer-content .footer-right ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer div.footer-bottom {
+  text-align: center;
+  background-color: var(--grey);
+}
+
+footer div.footer-bottom p {
+  margin: 0;
+  padding: 15px 0px 15px 0px;
+  color: white;
+}
